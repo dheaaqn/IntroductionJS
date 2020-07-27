@@ -1,6 +1,6 @@
 let biodata = {
     name: 'Dhea',
-    age: '17',
+    age: 17,
     hobbies: ['baca novel', 'main game', 'sedikit berkebun'],
     isMarried: false,
     schoolList: [{

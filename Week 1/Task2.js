@@ -1,25 +1,22 @@
-let mtk = 98
-let bahasaIndonesia = 35
-let bahasaInggris = 38
+let mtk = 90
 let ipa = 90
-let average
+let bahasaIndonesia = 70
+let bahasaInggris
 
-if (typeof mtk, ipa, bahasaIndonesia, bahasaInggris !== 'undefined') {
-    average = (mtk + ipa + bahasaIndonesia + bahasaInggris) / 4
+if (mtk && ipa && bahasaIndonesia && bahasaInggris) {
+    let average = (mtk + ipa + bahasaIndonesia + bahasaInggris) / 4;
+    console.log('Rata-rata ' + average)
+    if (average >= 90 && average <= 100) {
+        console.log('Grade A')
+    } else if (average >= 80 && average <= 89) {
+        console.log('Grade B')
+    } else if (average >= 70 && average <= 79) {
+        console.log('Grade C')
+    } else if (average >= 60 && average <= 69) {
+        console.log('Grade D')
+    } else {
+        console.log('Grade E')
+    }
 } else {
-    console.log('kosong tu')
-}
-
-console.log('Rata-rata: ' + average)
-
-if (average >= 90 && average <= 100) {
-    console.log('Grade A')
-} else if (average >= 80 && average <= 89) {
-    console.log('Grade B')
-} else if (average >= 70 && average <= 79) {
-    console.log(' Grade C')
-} else if (average >= 60 && average <= 69) {
-    console.log('Grade D')
-} else {
-    console.log('Grade E')
+    console.log('ada yg kosong')
 }

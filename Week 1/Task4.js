@@ -31,3 +31,5 @@ const {
     street,
     city
 } = data.address
+
+console.log(city)
