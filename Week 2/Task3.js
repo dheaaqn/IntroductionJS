@@ -1,5 +1,9 @@
 checkNum = (nilaiAwal, nilaiAkhir, dataArray) => {
-    if (nilaiAwal < nilaiAkhir) {
+    if (nilaiAwal > nilaiAkhir) {
+        console.log('Nilai akhir harus lebih besar dari nilai awal')
+    } else if (dataArray.length < 5) {
+        console.log('Data array kurang dari 5')
+    } else {
         const showArray = dataArray.filter((arr) => arr >= nilaiAwal && arr <= nilaiAkhir)
         if (showArray.length > 0) {
             showArray.sort((a, b) => {
@@ -9,9 +13,7 @@ checkNum = (nilaiAwal, nilaiAkhir, dataArray) => {
         } else {
             console.log('Jumlah angka dalam data array tidak ada')
         }
-    } else {
-        console.log('Nilai akhir harus lebih besar dari nilai awal')
     }
 }
 
-checkNum(3, 50, [1, 2, 23, 45, 5, 6])
+checkNum(3, 20, [1, 2, 23])
