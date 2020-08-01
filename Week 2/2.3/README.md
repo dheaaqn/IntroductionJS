@@ -35,8 +35,8 @@ Untuk beberapa restoran, dikenakan pajak yakni 5% dari harga makanan yang dipesa
 Input: ArkFood(75000, ARKFOOD5, 5, true)
 
 Output:
-- Harga       : 75000
-- Potongan    : 37500
-- Biaya Antar : 14000
-- Pajak       : 3750
-- SubTotal    : 55250
+- Harga: 75000
+- Potongan: 37500
+- Biaya Antar: 14000
+- Pajak: 3750
+- SubTotal: 55250
