@@ -6,9 +6,9 @@ const cekHariKerja = (day) => {
                 return item === day
             })
             if (cek) {
-                resolve(cek + (' adalah hari kerja'))
+                resolve(`${cek} adalah hari kerja`)
             } else {
-                reject(new Error('Hari ini bukan hari kerja'))
+                reject(new Error(`Hari ${cek} bukan hari kerja`))
             }
         }, 3000)
     })
@@ -32,7 +32,7 @@ cekHariKerja('Senin')
 const showHariKerja = async (day) => {
     try {
         const show = await day
-        console.log(show + ' adalah hari kerja')
+        console.log(`${show} adalah hari kerja`)
     } catch (err) {
         console.log(err.message)
     }
