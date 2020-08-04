@@ -69,14 +69,12 @@ const countJarak = (jarak) => {
     let ongkir
     if (jarak <= 2) {
         ongkir = 5000
-    } else if (jarak > 2) {
-        ongkir = ((jarak - 2) * 3000) + 5000
         console.log(`Biaya Pengantaran: ${ongkir}`)
     } else {
-        ongkir = 0
+        ongkir = ((jarak - 2) * 3000) + 5000
         console.log(`Biaya Pengantaran: ${ongkir}`)
     }
     return ongkir
 }
 
-ArkFood(50000, false, 5, true)
+ArkFood(50000, false, 3, true)

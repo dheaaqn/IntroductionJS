@@ -3,7 +3,7 @@ const url = 'https://jsonplaceholder.typicode.com/users'
 const getName = () => {
     fetch(url)
         .then((res) => {
-            return res.text()
+            return res.json()
         })
         .then((show) => {
             show.map((item) => {
