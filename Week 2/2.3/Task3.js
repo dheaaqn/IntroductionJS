@@ -16,12 +16,13 @@ const ArkFood = (harga, voucher, jarak, pajak) => {
 }
 
 const ARKAFOOD5 = (harga) => {
-    let potongan
+    let potongan = 0
     let minimalPembelian = 50000
     let maximalPotongan = 50000
 
     if (harga < minimalPembelian) {
         console.log('Minimal pembelian Rp. 50.000')
+        console.log(`Potongan: ${potongan}`)
     } else {
         potongan = 0.5 * harga
         if (potongan < maximalPotongan) {
@@ -35,12 +36,13 @@ const ARKAFOOD5 = (harga) => {
 }
 
 const DITRAKTIRDEMY = (harga) => {
-    let potongan
+    let potongan = 0
     let minimalPembelian = 25000
     let maximalPotongan = 30000
 
     if (harga < minimalPembelian) {
         console.log('Minimal pembelian Rp. 25.000')
+        console.log(`Potongan: ${potongan}`)
     } else {
         potongan = 0.6 * harga
         if (potongan < maximalPotongan) {
@@ -77,4 +79,4 @@ const countJarak = (jarak) => {
     return ongkir
 }
 
-ArkFood(50000, false, 3, true)
+ArkFood(50000, ARKAFOOD5, 3, true)
